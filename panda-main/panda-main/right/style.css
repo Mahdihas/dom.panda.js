@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.slide {
+    background: #fceae8 !important;
+}
+
+.buy-now {
+    background: #ff2f81 !important;
+    color: #fff !important;
+   
+
+}
