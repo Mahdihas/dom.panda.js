@@ -47,3 +47,14 @@ boxes.forEach(box => {
 
 
 //5complete document.getElementsByClassName(buy).style.display ='none';
+/ buy now button remove by click in javascript
+document.getElementById('section-box').addEventListener('click', function(event){
+    event.target.parentNode.removeChild(event.target);
+});
+
+const buttonRemoves = document.getElementsByClassName('buy-now');
+for (const buttonRemove of buttonRemoves) {
+    buttonRemove.addEventListener('click', function(event){
+        event.target.remove(event.target);
+    });
+}
