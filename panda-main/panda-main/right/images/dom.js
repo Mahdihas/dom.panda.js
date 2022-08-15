@@ -32,6 +32,35 @@ function Show(){
 //         style.display ='none';
 //     })
 // }
+//6// // Disabled button active by javascript
+document.getElementById('email').addEventListener('keyup', function(event){
+    const text   = event.target.value;
+    const enable = document.getElementById('enable');
+    if(text === 'email'){
+        enable.removeAttribute('disabled');
+
+    }
+    else{
+            enable.setAttribute('disabled', true);
+             }
+})
+
+
+//6
+
+
+
+// // Text background color change
+// document.getElementById('change-element-color').addEventListener('dblclick', function(){
+//     const colorChange = document.getElementById('color-change');
+//     colorChange.style.color = 'red';
+// });
+
+// // Image change by mouseenter in javascript
+// document.getElementById('change-img').addEventListener('mouseenter', function(){
+//     const changeImage = document.getElementById('change-img');
+//     changeImage.src = './image/change.jpg';
+// });
 
 
 //          remove by for each.          ////
